@@ -20,7 +20,13 @@ img {
     display: none;
 }
 
-#wrapper {}
+#wrapper {
+    /*
+    max-width: 1080px;
+    max-height: 90000px;
+*/
+}
+
 
 nav {
     background-color: #ECE7E1;
@@ -87,9 +93,7 @@ main {
     transition-delay: 3s;
 }
 
-header {
-    width: 20%;
-}
+header {}
 
 #menuDesktop {
     width: 20%;
@@ -106,6 +110,14 @@ header {
     background-color: #ECE7E1;
 }
 
+#menuDesktop h3 {
+    text-align: left;
+    border-bottom: 2px solid white;
+    margin-left: 1rem;
+    font-size: 4rem;
+
+}
+
 .navigation {
     margin-top: 3rem;
     letter-spacing: 3px;
@@ -113,7 +125,7 @@ header {
 
 #menuDesktop a {
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     display: block;
     text-align: left;
@@ -396,7 +408,7 @@ footer {
 
 
 .linkBox {
-    border: 4px solid black;
+
 
     text-align: center;
 
