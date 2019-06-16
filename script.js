@@ -14,6 +14,8 @@ function toggleMenu() {
     if (erSkjult == true) {
         document.getElementById("menuknapMobil").src = "Icons/Menu.svg";
     } else {
+
         document.getElementById("menuknapMobil").src = "icons/No.svg";
+
     }
 }

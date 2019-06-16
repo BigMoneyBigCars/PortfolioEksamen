@@ -4,9 +4,11 @@
     margin: 0;
 }
 
+
+
 html {
+
     font-size: 62.5%;
-    background-color: #bfbabe;
 
 }
 
@@ -18,12 +20,14 @@ img {
     display: none;
 }
 
+#wrapper {}
+
 nav {
-    justify-content: space-between;
-    display: flex;
-    background-color: #5d4954;
-    min-height: 5vw;
-    width: 100vw;
+    background-color: #ECE7E1;
+    text-align: right;
+    -webkit-box-shadow: inset 0px -8px 13px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px -8px 13px -12px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px -8px 13px -12px rgba(0, 0, 0, 1);
 }
 
 ul {
@@ -32,62 +36,112 @@ ul {
 
 /* Menu Mobil */
 
+
+main {
+    float: right;
+    width: 80%;
+    background-color: #ECE7E1;
+}
+
+
 #menuMobil a {
     display: block;
     text-decoration: none;
     color: rgba(232, 231, 231, 0.96);
-    margin-top: 14vw;
-    margin-bottom: 10vw;
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+}
+
+#menuMobil a:first-child {
+    padding-top: 15vh;
 }
 
 #menuknapMobil {
-    z-index: 10;
-    width: 8vw;
-    height: 8vw;
+    z-index: 12;
+    width: 20vw;
+    height: 20vw;
     margin-right: 5vw;
     margin-top: 4rem;
+    text-align: right;
+
+}
+
+.show {
+    opacity: 0.5;
 }
 
 #menuMobil {
-    width: 50%;
-    top: 7.4vh;
+    width: 100%;
+    top: 0;
     right: 0;
-    min-height: 100vh;
-    position: absolute;
+    position: inherit;
+    min-height: 50vh;
     z-index: 6;
     font-size: 2.5rem;
-    background-color: #5d4954;
+    background-color: #bc3171;
     transition: .3s;
     text-align: center;
     padding-bottom: 20vw;
     transition: transform 2s ease-in;
+    transition-delay: 3s;
 }
 
+header {
+    width: 20%;
+}
 
 #menuDesktop {
-    width: 100vw;
-    min-height: 2vw;
-    display: flex;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
     justify-content: space-around;
-
+    /*    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);*/
+    top: 0;
+    left: 0;
+    z-index: 80;
+    -webkit-box-shadow: inset -4px 0px 13px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset -4px 0px 13px -12px rgba(0, 0, 0, 1);
+    box-shadow: inset -4px 0px 13px -12px rgba(0, 0, 0, 1);
+    background-color: #ECE7E1;
 }
 
 .navigation {
-    margin-top: 2vw;
+    margin-top: 3rem;
     letter-spacing: 3px;
 }
 
 #menuDesktop a {
     text-decoration: none;
-    font-size: 6rem;
-    color: rgba(232, 231, 231, 0.96);
-    padding: 4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: black;
+    display: block;
+    text-align: left;
+    padding: 15px;
+    margin-left: 3rem;
+    transition: 0.3s;
+
+
 }
 
+#menuDesktop a:hover {
+    color: #f58e8e;
+    margin-top: -10px;
+
+    box-shadow: -5px 18px 22px -20px rgba(0, 0, 0, 0.9);
+
+
+
+    transform: scale(1.1);
+    left: 5%;
+
+
+}
+
+.logoBillede img {
+    padding: 20px;
+    padding-bottom: 40px;
+}
 
 /*.logo {
     background-image: url(billeder/512x512.png);
@@ -99,30 +153,39 @@ ul {
 }*/
 
 .logo h4 {
-    font-size: 10rem;
-    color: rgba(232, 231, 231, 0.96);
-    margin-top: 1.5vw;
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 5px;
 }
 
-.coverBillede {
-    background-image: url(billeder/PeterPanikBilledFedSkiturMand.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 90vh;
 
+.coverContainer {
+    margin: 0;
+    width: 80%;
+    float: right;
+}
+
+.coverBillede {
+    background-image: url(billeder/skibilledecrop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    height: 104vh;
+    filter: grayscale(30%);
+    opacity: .7;
+    float: right
 }
 
 .navnTekst {
     text-align: center;
-    font-size: 30rem;
+    font-size: 10rem;
     color: rgba(255, 255, 255, 0.96);
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     letter-spacing: 10px;
-
     padding-top: 10vw;
 }
 
@@ -130,12 +193,7 @@ ul {
     margin: 5vw;
 }
 
-
-
-
 footer {
-    width: 100vw;
-    height: 5vh;
     background-color: #2d2d2f;
     font-size: 1rem;
     text-align: center;
@@ -145,69 +203,224 @@ footer {
 }
 
 
+#portfolie .middle_top_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfolie .middle_bottom_container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
-@media only screen and (max-width: 768px) {
+#portfolie .top_container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .navigation {
-        display: none;
-
-    }
-
-    .navnTekst {
-        padding-top: 55vw;
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .logo h4 {
-        font-size: 1.5rem;
-        color: rgba(232, 231, 231, 0.96);
-        margin-top: 6vw;
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing: 2px;
-        margin-left: 2vw;
-        padding-left: 0;
-
-    }
-
-    #menuknapMobil {
-        z-index: 10;
-        width: 8vw;
-        min-height: 12vw;
-        margin-top: 2vw;
-        margin-right: 4vw;
-        margin-bottom: 2vw;
-
-    }
-
-    .coverbillede {
-        height: 100vh;
-    }
-
-
-    #menuDesktop {
-        width: 100vw;
-        padding-right: 10rem;
-        min-height: 2vw;
-        display: flex;
-        justify-content: space-around;
-
-    }
+#portfolie .bottom_container {
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
+
+
+.col_left {
+
+    flex-basis: 300px;
+    flex-grow: 1;
+
+    text-align: center;
+
+}
+
+.col_right {
+
+    flex-basis: 300px;
+    flex-grow: 1;
+
+    text-align: center;
+}
+
+
+
+.rounded {
+    border-radius: 0px;
+}
+
+.temaOverskrift {
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+}
+
+
+
+.grey {
+    filter: saturate(1);
+    opacity: 0.7;
+
+}
+
+.nogrey {
+    filter: grayscale(1%; )
+}
+
+.grey:hover {
+
+    opacity: 1;
+    color: white;
+    filter: brightness(1.5);
+
+}
+
+.boxhidden {
+    margin: 0 auto;
+    opacity: 0;
+    transition: 0.3s;
+
+
+}
+
+.boxhidden:hover {
+    opacity: 1;
+
+}
+
+.box-border {
+    margin-top: 66px;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid black;
+
+
+
+}
+
+.box-border h2 {
+    padding-top: 30%;
+    font-size: 2rem;
+    margin: 2vh;
+    letter-spacing: 0.2rem;
+}
+
+.box-border p {
+    padding-top: 5vh;
+    font-size: 2rem;
+
+    letter-spacing: 0.2rem;
+}
+
+
+.billede {
+    display: flex;
+    background: url(billeder/skibillede.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 432px;
+    width: 432px;
+    filter: saturate(1.5);
+
+}
+
+
+.aabenbar {
+    display: flex;
+    background: url(billeder/aaben.PNG) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+    filter: saturate(1.5);
+}
+
+.swissDesign {
+    display: flex;
+    background: url(billeder/SwissGraphicDesign.jpg) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+    filter: saturate(1.5);
+}
+
+.aabenhave {
+    display: flex;
+    background: url(billeder/aabenHave.png) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+    filter: saturate(1.5);
+}
+
+.tms {
+    display: flex;
+    background: url(billeder/toomuchsharing.PNG) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+    filter: saturate(1.5);
+
+}
+
+.moleinfestedfarm {
+    display: flex;
+    background: url(billeder/moleinfestedfarm.PNG) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+
+    position: relative;
+    filter: saturate(1.5);
+}
+
+.webprototype {
+    display: flex;
+    background: url(billeder/keaWebPrototypecopy.png) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+    filter: saturate(1.5);
+}
+
+.nativeApp {
+    display: flex;
+    background: url(billeder/nativeAppcopy.png) no-repeat center;
+    min-height: 432px;
+    min-width: 432;
+    background-size: cover;
+    filter: saturate(1.5);
+    position: relative;
+}
+
+
+.linkBox {
+    border: 4px solid black;
+
+    text-align: center;
+
+}
+
+.linkBox a {
+    text-decoration: none;
+    color: black;
+}
+
+.linkBox h5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
 
 @media only screen and (min-width: 768px) {
 
     #menuMobil {
         display: none;
-
     }
 
     #menuknapMobil {
         display: none;
-
     }
 
     #menu.hidden {
@@ -217,7 +430,111 @@ footer {
 
     #menu li {
         display: inline-block;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+
+    .navigation {
+        display: none;
+
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .navnTekst {
+        padding-top: 35vh;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .logo h4 {
+        margin-top: 1rem;
+        letter-spacing: 2px;
+        padding-left: 0;
+    }
+
+    #menuknapMobil {
+        text-align: right;
+        z-index: 10;
+        width: 8vw;
+        min-height: 12vw;
+        margin-top: 2vw;
+        margin-right: 4vw;
+        margin-bottom: 2vw;
+
+    }
+
+    #menuDesktop {
+        width: 100vw;
+        padding-right: 10rem;
+        height: 0;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .coverBillede {
+        height: 80vh;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+    main {
+
+        width: 100%;
+    }
+
+    .box-border h4 {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        font-size: 3rem;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    .rounded {
+        border-radius: 15px;
+    }
+
+    .swissDesign,
+    .moleinfestedfarm,
+    .tms,
+    .nativeApp,
+    .webprototype,
+    .aabenbar,
+    .aabenhave,
+    .billede {
+        min-height: 100px;
+        min-width: 100px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .box-border {
+        margin-top: 25px;
+        width: 300px;
+        height: 150px;
+        border-radius: 200px;
+
+    }
+
+    .box-border h2 {
+        padding-top: 15%;
+        font-size: 2.5rem;
+        margin: 2vh;
+        letter-spacing: 0.2rem;
+    }
+
+    .box-border p {
+        padding-top: .5vh;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
     }
 
 
