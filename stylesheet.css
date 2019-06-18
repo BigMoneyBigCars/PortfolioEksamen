@@ -134,6 +134,7 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 #menuDesktop a:hover {
     color: #f85858;
 
@@ -153,6 +154,8 @@ a {
 
 .logoBillede img {
     padding: 20px;
+    padding-right: 40px;
+
     padding-bottom: 40px;
 }
 
@@ -248,6 +251,7 @@ footer {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     color: black;
+    font-weight: 900;
 }
 
 .box-border p {
@@ -257,6 +261,7 @@ footer {
     margin: 2vh;
     letter-spacing: 0.2rem;
     color: red;
+    font-weight: 900;
 }
 
 .rounded {
@@ -315,7 +320,7 @@ footer {
 .aabenhave {
     display: flex;
     background: url(billeder/video/oelogglas.jpg) no-repeat center;
-    background-position: 67% 800%;
+    background-position: 67% 80%;
     min-height: 432px;
     min-width: 432;
     background-size: cover;
@@ -708,30 +713,46 @@ h1 {
     }
 
     .box-border {
-        margin-top: 25px;
+        margin-top: 145px;
+        bottom: 0;
+        position: relative;
+
         width: 300px;
-        height: 150px;
+        height: 50px;
         border-radius: 200px;
 
     }
 
     .box-border h2 {
-        padding-top: 5%;
+        margin: 0px;
+        padding: 0px;
         font-size: 2.5rem;
-        margin: 2vh;
+
         letter-spacing: 0.2rem;
     }
 
     .box-border p {
-        padding-top: .5vh;
+        padding-top: 0px;
         font-size: 2rem;
+        margin: 0;
+        margin-top: 12px;
         letter-spacing: 0.2rem;
+    }
+
+    .boxhidden {
+
+        opacity: 1;
+        bottom: 0;
     }
 
     .boxhidden:hover {
         transform: scale(1.1);
         opacity: 1;
 
+    }
+
+    .box-border h2 {
+        display: none;
     }
 
     .col_left {
@@ -790,7 +811,7 @@ h1 {
 
 
     .wrapper h1 {
-        font-size: 7rem;
+        font-size: 5rem;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
@@ -839,7 +860,26 @@ h1 {
         margin-top: -70px;
     }
 
+    .nativecover,
+        {
+        min-height: 300px;
+    }
 
+    .webprototypecover {
+        min-height: 150px;
+    }
+
+
+    .sexcover,
+    .animationcover {
+        min-height: 200px;
+
+    }
+
+    .swisscover,
+    .redesigncover {
+        min-height: 100px;
+    }
 }
 
 /* Media query til mobil opsætning START */
