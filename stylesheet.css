@@ -140,12 +140,14 @@ a {
 
     box-shadow: -5px 18px 22px -20px rgba(0, 0, 0, 0.9);
     transform: scale(1.1);
+    filter: brightness(1.5);
     left: 5%;
 }
 
 #menuDesktop a.active,
 #menuMobil a.active {
     color: #f85858;
+
 }
 
 /* Menu Desktop SLUT */
