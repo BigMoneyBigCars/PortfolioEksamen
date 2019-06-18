@@ -18,8 +18,8 @@ img {
 }
 
 #wrapper {
-    /* max-width: 1080px;
-    max-height: 90000px; */
+    max-width: 1080px;
+
 }
 
 nav {
@@ -49,10 +49,12 @@ a {
     display: block;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.96);
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
     transition: .3s;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 #menuMobil a:hover {
     color: #f58e8e;
@@ -62,6 +64,7 @@ a {
     left: 5%;
     z-index: 100;
 }
+
 
 #menuMobil a:first-child {}
 
@@ -97,13 +100,9 @@ a {
 #menuDesktop {
     width: 20%;
     height: 100vh;
-    position: fixed;
-    justify-content: space-around;
     /*    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);*/
-    top: 0;
-    left: 0;
     z-index: 80;
-    box-shadow: inset -4px 0px 13px -12px rgba(0, 0, 0, 1);
+    float: left;
     background-color: #ECE7E1;
 }
 
@@ -112,31 +111,40 @@ a {
     border-bottom: 2px solid white;
     margin-left: 1rem;
     font-size: 4rem;
-
 }
 
 .navigation {
-    margin-top: 3rem;
-    letter-spacing: 3px;
+    padding-top: 3rem;
+    position: fixed;
+    width: 216px;
+    box-shadow: inset -4px 0px 13px -12px rgba(0, 0, 0, 1);
+    background-color: #ECE7E1;
+    height: 100vh;
 }
 
 #menuDesktop a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     display: block;
     text-align: left;
     padding: 15px;
-    margin-left: 3rem;
+    margin-left: 15px;
     transition: 0.3s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #menuDesktop a:hover {
     color: #f58e8e;
-    margin-top: -10px;
+
     box-shadow: -5px 18px 22px -20px rgba(0, 0, 0, 0.9);
     transform: scale(1.1);
     left: 5%;
+}
+
+#menuDesktop a.active,
+#menuMobil a.active {
+    color: #f58e8e;
 }
 
 /* Menu Desktop SLUT */
@@ -232,27 +240,30 @@ footer {
     border-radius: 200px;
     background-color: rgb(242, 242, 242);
     border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .box-border h2 {
-    padding-top: 30%;
-    font-size: 2rem;
-    margin: 2vh;
-    letter-spacing: 0.2rem;
-    color: red;
-
-}
-
-.box-border p {
-    padding-top: 40px;
+    padding-top: 35%;
     font-size: 2rem;
     letter-spacing: 0.2rem;
     color: black;
 }
 
+.box-border p {
+
+    padding-top: 10px;
+    font-size: 3rem;
+    margin: 2vh;
+    letter-spacing: 0.2rem;
+    color: red;
+}
+
 .rounded {
     border-radius: 0px;
 }
+
+
 
 /* Indhold containers & classes SLUT */
 
@@ -271,12 +282,13 @@ footer {
 }
 
 .migselv {
+    margin: 0 auto;
     display: flex;
-    background: url(billeder/skibillede.jpg) no-repeat bottom;
+    background: url(billeder/mig1.jpg) no-repeat center;
     background-size: cover;
     height: 432px;
     width: 432px;
-    filter: saturate(1.5);
+    filter: saturate(1.6);
 }
 
 .aabenbar {
@@ -321,10 +333,12 @@ footer {
 
 .moleinfestedfarm {
     display: flex;
-    background: url(billeder/moleinfestedfarm.PNG) no-repeat center;
+    background: url(billeder/moleinfestedfarm.PNG) no-repeat;
     min-height: 432px;
     min-width: 432;
     background-size: cover;
+    background-position: 56% 20%;
+
 
     position: relative;
     filter: saturate(1.5);
@@ -352,16 +366,17 @@ footer {
 /* De forskellige billeder til forside SLUT */
 
 .linkBox {
-
+    display: flex;
+    justify-content: space-around;
     background-color: #726f6f;
-    text-align: center;
+
     min-width: 100px;
     min-height: 50px;
 
 }
 
 .linkBox h5 {
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: white;
     margin: 15px;
     padding: 15px;
@@ -370,10 +385,10 @@ footer {
 
 .linkBox h5:hover {
 
-    box-shadow: -5px 18px 22px -20px rgba(0, 0, 0, 0.9);
-    transform: scale(1.2);
-    font-size: 3rem;
-    color: orange;
+
+    transform: scale(1);
+
+    color: #f24040;
     filter: brightness(2);
 }
 
@@ -403,11 +418,26 @@ footer {
 .swisscover {
     display: flex;
     background: url(billeder/swiss/Splash_Lasse.jpg) no-repeat center;
-    min-height: 100%;
+    min-height: 300px;
     min-width: 100%;
-    background-size: contain;
-    filter: saturate(1.5) grayscale(10%);
-    position: relative;
+    background-size: cover;
+}
+
+.animationcover {
+    display: flex;
+    background: url(billeder/AnimationEget/StartscreenAni.JPG) no-repeat center;
+    min-height: 500px;
+    min-width: 805;
+    background-size: cover;
+}
+
+.sexcover {
+    display: flex;
+    background: url(billeder/sexogsamfund/startscreen.png) no-repeat center;
+    min-height: 500px;
+    min-width: 805;
+
+    background-size: cover;
 }
 
 .temaTools,
@@ -428,7 +458,8 @@ h1 {
 }
 
 .andetbillede,
-.kodeEksempel {
+.kodeEksempel,
+.statemachine {
     display: flex;
     flex-wrap: wrap;
 
@@ -451,39 +482,47 @@ h1 {
     flex-grow: 1;
 }
 
-#wrapperSwiss {
+.wrapper {
     font-size: 3rem;
+
+
+    font-family: 'Lora', serif;
+
+
 
 }
 
-#wrapperSwiss h1 {
-    color: red;
+.wrapper h1 {
+    display: block;
+
+    color: #454242;
     font-weight: bold;
-    font-size: 9rem;
+    font-size: 7rem;
     margin-top: 5vh;
     margin-bottom: 10vh;
 
 
 }
 
-#wrapperSwiss h2 {
+.wrapper h2 {
     color: black;
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 3rem;
     margin-top: 5vh;
     margin-bottom: 5vh;
     border-bottom: 2px solid black;
-
 }
 
-#wrapperSwiss h3 {
+.wrapper h3 {
+    margin: 0;
     color: black;
-
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 1vh;
-
 }
 
+.wrapper p {
+    font-size: 1.5rem;
+}
 
 /* De forskellige billeder til forside SLUT */
 
@@ -632,7 +671,6 @@ h1 {
     .kodeEksempel {
         display: flex;
         flex-wrap: wrap;
-
     }
 
     .billede_left,
@@ -642,12 +680,10 @@ h1 {
 
     }
 
-
     .billede_right,
     .kode2 {
         margin-right: 0px;
         margin-left: 0px;
-
     }
 
     .linkBox h5 {
@@ -655,6 +691,31 @@ h1 {
     }
 
 
+
+    .wrapper h1 {
+        font-size: 7rem;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .wrapper h2 {
+        font-size: 3rem;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin: 3vh;
+        border-bottom: 2px solid black;
+    }
+
+    .wrapper h3 {
+        font-size: 2rem;
+        margin: 2vh;
+    }
+
+    .wrapper p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 2rem;
+    }
 }
 
 /* Media query til mobil opsætning START */
