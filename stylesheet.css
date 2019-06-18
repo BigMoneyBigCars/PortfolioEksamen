@@ -302,7 +302,7 @@ footer {
     display: flex;
     background: url(billeder/aabenbarforside.png) no-repeat center;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     filter: saturate(1.5);
     position: static;
@@ -314,7 +314,7 @@ footer {
     display: flex;
     background: url(billeder/SwissGraphicDesign.jpg) no-repeat center;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     filter: saturate(1.5);
 }
@@ -324,7 +324,7 @@ footer {
     background: url(billeder/video/oelogglas.jpg) no-repeat center;
     background-position: 67% 80%;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     filter: saturate(1.5);
 }
@@ -333,7 +333,7 @@ footer {
     display: flex;
     background: url(billeder/toomuchsharing.PNG) no-repeat center;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     filter: saturate(1.5);
 
@@ -343,7 +343,7 @@ footer {
     display: flex;
     background: url(billeder/moleinfestedfarm.PNG) no-repeat;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     background-position: 56% 20%;
 
@@ -356,7 +356,7 @@ footer {
     display: flex;
     background: url(billeder/keaWebPrototypecopy.png) no-repeat right;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     filter: saturate(1.5);
 }
@@ -365,7 +365,7 @@ footer {
     display: flex;
     background: url(billeder/nativeAppcopy.png) no-repeat right;
     min-height: 432px;
-    min-width: 432;
+    min-width: 432px;
     background-size: cover;
     filter: saturate(1.5);
     position: relative;
@@ -420,7 +420,7 @@ footer {
     display: flex;
     background: url(billeder/AnimationEget/StartscreenAni.JPG) no-repeat center;
     min-height: 500px;
-    min-width: 805;
+    min-width: 80%;
     background-size: cover;
 }
 
@@ -619,7 +619,7 @@ h1 {
 }
 
 .webdesigner {
-    margin-top: 6bh;
+    margin-top: 6vh;
     margin-bottom: 6vh;
 }
 
@@ -863,7 +863,7 @@ h1 {
     }
 
     .nativecover,
-        {
+    .animationcover {
         min-height: 300px;
     }
 
@@ -872,8 +872,7 @@ h1 {
     }
 
 
-    .sexcover,
-    .animationcover {
+    .sexcover {
         min-height: 200px;
 
     }
@@ -882,6 +881,8 @@ h1 {
     .redesigncover {
         min-height: 100px;
     }
+
 }
+
 
 /* Media query til mobil opsætning START */
