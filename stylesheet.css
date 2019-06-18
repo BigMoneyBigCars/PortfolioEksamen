@@ -419,8 +419,15 @@ footer {
     display: flex;
     background: url(billeder/sexogsamfund/startscreen.png) no-repeat center;
     min-height: 500px;
-    min-width: 805;
+    min-width: 80%;
+    background-size: cover;
+}
 
+.nativecover {
+    display: flex;
+    background: url(billeder/DesignXDProto/designsprint.png) no-repeat center;
+    min-height: 300px;
+    min-width: 100%;
     background-size: cover;
 }
 
@@ -477,9 +484,9 @@ h1 {
 .wrapper h1 {
     display: block;
 
-    color: #454242;
+    color: #000000;
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 5rem;
     margin-top: 5vh;
     margin-bottom: 10vh;
 
@@ -748,6 +755,23 @@ h1 {
         margin-left: 10px;
         margin-right: 10px;
         font-size: 2rem;
+    }
+
+    .linkBox h5 {
+        margin: 0;
+        padding: 0;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .linkBox {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
 }
 
