@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: rgba(235, 126, 126, 0.76);
 
 }
 
@@ -423,12 +424,22 @@ footer {
     background-size: cover;
 }
 
-.nativecover {
+.webprototypecover {
     display: flex;
     background: url(billeder/DesignXDProto/designsprint.png) no-repeat center;
     min-height: 300px;
     min-width: 100%;
     background-size: cover;
+
+}
+
+.nativecover {
+    display: flex;
+    background: url(billeder/NativeApp/teamcanvas.PNG) no-repeat center;
+    min-height: 600px;
+    min-width: 100%;
+    background-size: cover;
+
 }
 
 .temaTools,
@@ -643,11 +654,16 @@ h1 {
     .webprototype,
     .aabenbar,
     .aabenhave,
-    .billede {
+    .billede,
+    .migselv {
         min-height: 100px;
         min-width: 100px;
         height: 200px;
         width: 200px;
+    }
+
+    .migselv {
+        background-position: 90% 20%;
     }
 
     .box-border {
@@ -772,6 +788,14 @@ h1 {
         display: block;
         margin-top: 1vh;
         margin-bottom: 1vh;
+    }
+
+    .logoBillede img {
+        padding: 0px;
+        margin: 0;
+        width: 150px;
+        max-height: 150px;
+        margin-top: -70px;
     }
 }
 
