@@ -293,7 +293,7 @@ footer {
 
 .aabenbar {
     display: flex;
-    background: url(billeder/aaben.PNG) no-repeat center;
+    background: url(billeder/aabenbarforside.png) no-repeat center;
     min-height: 432px;
     min-width: 432;
     background-size: cover;
@@ -314,7 +314,8 @@ footer {
 
 .aabenhave {
     display: flex;
-    background: url(billeder/aabenHave.png) no-repeat center;
+    background: url(billeder/video/oelogglas.jpg) no-repeat center;
+    background-position: 67% 800%;
     min-height: 432px;
     min-width: 432;
     background-size: cover;
@@ -346,7 +347,7 @@ footer {
 
 .webprototype {
     display: flex;
-    background: url(billeder/keaWebPrototypecopy.png) no-repeat center;
+    background: url(billeder/keaWebPrototypecopy.png) no-repeat right;
     min-height: 432px;
     min-width: 432;
     background-size: cover;
@@ -355,7 +356,7 @@ footer {
 
 .nativeApp {
     display: flex;
-    background: url(billeder/nativeAppcopy.png) no-repeat center;
+    background: url(billeder/nativeAppcopy.png) no-repeat right;
     min-height: 432px;
     min-width: 432;
     background-size: cover;
@@ -451,6 +452,15 @@ footer {
 
 }
 
+.videocover {
+    display: flex;
+    background: url(billeder/video/bar_baggrund.jpg) no-repeat top;
+    min-height: 200px;
+    min-width: 100%;
+    background-size: cover;
+
+}
+
 .temaTools,
 h1 {
     text-align: center;
@@ -481,12 +491,15 @@ h1 {
 .kode3,
 .kode4,
 .kode5,
-.kode6 {
+.kode6,
+.kode7 {
     margin: 0;
     padding: 0;
     flex-grow: 1;
     flex-basis: 100px;
 }
+
+
 
 
 
@@ -703,7 +716,7 @@ h1 {
     }
 
     .box-border h2 {
-        padding-top: 15%;
+        padding-top: 5%;
         font-size: 2.5rem;
         margin: 2vh;
         letter-spacing: 0.2rem;
@@ -825,6 +838,8 @@ h1 {
         max-height: 150px;
         margin-top: -70px;
     }
+
+
 }
 
 /* Media query til mobil opsætning START */
